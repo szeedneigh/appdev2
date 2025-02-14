@@ -1,0 +1,35 @@
+
+Introduction
+
+	The name is Sidney John Sarcia, a keen student with a passion for learning outside the conventional classroom environment. I am highly motivated to learn about new technologies and research about their potential application to learning. In this sense, I'm a "Jack of All Trades," because I like to try out lots of different subjects of study without focusing on just one area of specialization. I am passionate about learning across numerous areas, ranging from coding, design, project management ,and problem-solving.
+
+From a technical point, I've worked on a range of programming languages from Python to Java, JavaScript/TypeScript, PHP, C++, and frameworks like React.JS and Next.JS. I also have limited experience with back-end development, where I've implemented APIs using Express.js, played with MongoDB databases, and created full-stack apps.
+
+As I continue my learning, I find that practical exercises are the most useful means for staying engaged in the newest technical trends.
+
+Course Expectations 
+
+	In this course I want to create applications that solve actual problems, not just classroom exercises. While I've built some basic projects before, I'm eager to learn how to develop software that can handle real users and heavy usage. My main focus is on getting better at building the behind-the-scenes parts of applications, especially using tools like Express.js for creating reliable web services.
+One area that really interests me is incorporating artificial intelligence or machine learning into my projects. It amazes me how common AI/ML features have become in everyday applications, and I want to learn how to thoughtfully add these capabilities to my own work. Whether it's a simple chatbot or basic data predictions, I believe understanding these technologies will help me build more useful applications.
+Security is another crucial area I want to master. I want to learn the right ways to keep data safe and prevent common security problems in my applications.
+I often find myself struggling to make the visible parts of my applications (using React) work smoothly with the backend systems. I'm hoping this course will help me better understand how to connect these pieces effectively.
+My goal is to finish this course with the ability to build professional-quality applications that I'd be proud to showcase in my portfolio.
+
+Challenges and Areas for Improvement
+
+	As I work with my projects, I find myself struggling most with managing errors in complex operations and handling multiple async tasks smoothly. Database work in MongoDB also trips me up, especially  setting up relationships between different data sets efficiently.
+Security is another area where I need to build confidence. While I understand the basics of authentication, I want to make sure I'm following the best practices to keep my applications safe from common attacks. I can create simple APIs, but I'm looking to improve my skills in building more professional ones that can handle real-world use cases.
+To overcome these challenges, I'm committing to regular practice through hands-on projects. I plan to be more active in class discussions and won't hesitate to ask questions when I'm stuck. I'll also use online resources to supplement my learning, focusing particularly on the areas I find challenging.
+My strategy is to start with small, complete projects that specifically target these difficult areas. When I run into problems, I'll break them down into manageable pieces and reach out to more experienced developers for guidance when needed or maybe just ask AI platforms.
+
+Expectations from the Instructor
+
+Based on my learning style and goals, I expect my instructor to provide clear guidance while allowing room for creativity and exploration. I learn best when concepts are demonstrated through practical examples rather than just theory. It would be incredibly helpful if you could walk through real-world coding scenarios, showing not just what works, but also common pitfalls to avoid, especially in areas like async operations and database optimization where I struggle.
+I would greatly benefit from code reviews and constructive feedback on my projects, particularly regarding security best practices and API design. Having access to example codebases that demonstrate professional-grade architecture would help me understand how to structure larger applications properly.
+As for resources, I’d appreciate it if we could be provided with some industry standard resources, and also I do have a lot of resources that I can share with my classmates for them to be able to catch up to the latest trends in technologies.
+Most importantly, I hope we can learn from both successes and failures. Your insights from real-world development experience would be invaluable in helping me bridge the gap between classroom learning and professional software development.
+
+Final Thoughts
+
+I'm excited to build projects that I can actually showcase in my portfolio. While following tutorials is helpful, I'd love opportunities to build something unique that solves real problems. I also hope we can learn about current industry trends and how companies are actually using these technologies in production.
+I learn best through a mix of theory and practical application - understanding the “why” behind certain practices helps me remember and apply concepts better. If possible, I'd appreciate having some flexibility in project requirements so I can challenge myself by incorporating additional features.
