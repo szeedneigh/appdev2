@@ -1,0 +1,32 @@
+
+My Role:
+
+Reflect on the role you were assigned in your group (Developer). Write about how you contributed to the project, 
+what challenges you faced in this role, and what you learned.
+
+  During our project I worked as a developer where I dedicated effort to both designing the codebase 
+and creating plans. Being the lead developer allowed me to demonstrate my technical expertise because
+I created the system architecture that proved essential to project success. This role demanded me to 
+deepen my knowledge of programming. I assisted the team by designing the system itself.
+
+  The biggest challenges for me is the internet connection and my device’s limits. The experience helped 
+me develop gratitude for the resources I possessed. I stumbled upon completely unfamiliar technical 
+tools and terminology during that period. The overwhelming feeling turned into learning opportunities
+when I took on the unfamiliar project sections.
+
+  I had to learn and adjust my strategies as my computer introduced technological challenges so I started 
+working with basic applications during system delays. A realization dawned on me that unlearned information
+do not represent failure rather they present learning opportunities. The project taught me to become more 
+efficient at solving problems across programming challenges and unexpected real-life situations.
+  
+
+Teamwork Experience:
+
+Share your experience working as part of a team. What went well? What could be improved? Reflect on how well the team communicated, delegated tasks, and collaborated to achieve the project goals.
+
+
+Personal Growth and Discipline:
+
+Think about the disciplines you want to improve.
+
+As a Developer, you might want to improve your coding efficiency or debugging skills. Reflect on how you plan to improve these skills moving forward.
