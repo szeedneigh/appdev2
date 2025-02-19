@@ -22,11 +22,19 @@ efficient at solving problems across programming challenges and unexpected real-
 
 Teamwork Experience:
 
-Share your experience working as part of a team. What went well? What could be improved? Reflect on how well the team communicated, delegated tasks, and collaborated to achieve the project goals.
+Share your experience working as part of a team. What went well? What could be improved? 
+Reflect on how well the team communicated, delegated tasks, and collaborated to achieve the project goals.
+
+
 
 
 Personal Growth and Discipline:
 
-Think about the disciplines you want to improve.
+I struggle with underestimating task times, resulting into distractions (instagram, random research), and 
+inconsistent effort—swinging between hyper-focus and low motivation. Under pressure, I sacrifice sleep for
+rushed work, leading to burnout.
 
-As a Developer, you might want to improve your coding efficiency or debugging skills. Reflect on how you plan to improve these skills moving forward.
+Improvement Plan:
+Schedule strictly: Time-block tasks, breaks, and distractions.
+Limit interruptions: Use focus apps; tackle small daily goals.
+Prioritize rest: Set a daily shutdown time.
