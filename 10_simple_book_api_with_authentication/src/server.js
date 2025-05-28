@@ -2,9 +2,9 @@ require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-const bookRoutes = require('./src/routes/book.route');
-const authRoutes = require('./src/routes/auth.route');
-const authMiddleware = require('./src/middleware/auth.middleware');
+const bookRoutes = require('./routes/book.route');
+const authRoutes = require('./routes/auth.route');
+const authMiddleware = require('./middleware/auth.middleware');
 const connectDB = require('./config/db');
 
 const app = express();
