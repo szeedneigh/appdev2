@@ -1,9 +1,8 @@
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-const User = require('../models/user');
+const User = require('../models/users'); // Fixed model path
 const { signupSchema, signinSchema } = require('../validators/auth.validator');
-
-const JWT_SECRET = 'your-secret-key'; // In production, use environment variables
+require('dotenv').config();
 
 const signup = async (req, res) => {
   try {
@@ -67,7 +66,7 @@ const signin = async (req, res) => {
     // Generate JWT token
     const token = jwt.sign(
       { userId: user._id, username: user.username },
-      JWT_SECRET,
+      process.env.JWT_SECRET,
       { expiresIn: '24h' }
     );
 
