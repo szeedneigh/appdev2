@@ -1,6 +1,5 @@
 const jwt = require('jsonwebtoken');
-
-const JWT_SECRET = 'your-secret-key'; 
+require('dotenv').config();
 
 const authMiddleware = async (req, res, next) => {
   try {
@@ -10,7 +9,7 @@ const authMiddleware = async (req, res, next) => {
       return res.status(401).json({ message: 'Authentication required' });
     }
 
-    const decoded = jwt.verify(token, JWT_SECRET);
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
     req.user = decoded;
     next();
   } catch (error) {
