@@ -1,0 +1,98 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Book Created Notification
+    style.
+      body {
+        font-family: 'Arial', sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+      .container {
+        max-width: 600px;
+        margin: 20px auto;
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      }
+      .header {
+        text-align: center;
+        color: #2c3e50;
+        border-bottom: 3px solid #3498db;
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+      }
+      .book-details {
+        background: #ecf0f1;
+        padding: 20px;
+        border-radius: 8px;
+        margin: 20px 0;
+      }
+      .book-title {
+        color: #2980b9;
+        font-size: 1.4em;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .book-info {
+        margin: 10px 0;
+        font-size: 1.1em;
+      }
+      .label {
+        font-weight: bold;
+        color: #34495e;
+      }
+      .confirmation {
+        background: #d5f4e6;
+        border-left: 4px solid #27ae60;
+        padding: 15px;
+        margin: 20px 0;
+        border-radius: 4px;
+      }
+      .footer {
+        text-align: center;
+        margin-top: 30px;
+        color: #7f8c8d;
+        font-size: 0.9em;
+        border-top: 1px solid #bdc3c7;
+        padding-top: 20px;
+      }
+      .icon {
+        font-size: 2em;
+        margin-bottom: 10px;
+      }
+  body
+    .container
+      .header
+        .icon 📚
+        h1 New Book Added Successfully!
+        
+      .confirmation
+        p 
+          strong ✅ Confirmation: 
+          | A new book has been successfully added to the system.
+      
+      .book-details
+        h2 📖 Book Details
+        .book-title= title
+        .book-info
+          span.label Author: 
+          span= author
+        if year
+          .book-info
+            span.label Year Published: 
+            span= year
+        .book-info
+          span.label Date Added: 
+          span= new Date().toLocaleDateString()
+      
+      .footer
+        p 
+          | This is an automated notification from the Book Management System.
+        p 
+          | Thank you for using our service! 🎉 

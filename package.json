@@ -1,5 +1,31 @@
 {
+  "name": "simple-book-api-deployment",
+  "version": "1.0.0",
+  "description": "Simple Book API with Authentication, Email Notifications, and Data Seeding - Deployed on Render",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "seed": "node seeders/seed.js",
+    "seed:test": "node seeders/seed-test.js"
+  },
+  "keywords": [
+    "book",
+    "api",
+    "authentication",
+    "email",
+    "notifications"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
   "dependencies": {
+    "@faker-js/faker": "^9.8.0",
+    "bcrypt": "^6.0.0",
     "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",
     "dotenv": "^16.5.0",
@@ -7,6 +33,7 @@
     "joi": "^17.13.3",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.15.1",
-    "nodemon": "^3.1.10"
+    "nodemailer": "^6.9.14",
+    "pug": "^3.0.2"
   }
 }

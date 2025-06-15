@@ -1,5 +1,6 @@
 const Book = require('../models/book');
 const mongoose = require('mongoose');
+const { emailNotificationMiddleware } = require('../middleware/send-email.middleware');
 
 // Get all books (only books created by the authenticated user)
 exports.getAllBooks = async (req, res) => {
@@ -36,7 +37,7 @@ exports.getBookById = async (req, res) => {
 // Create a new book
 exports.createBook = async (req, res) => {
   try {
-    const { title, author } = req.body;
+    const { title, author, year } = req.body;
     
     // Validation
     if (!title || !author) {
@@ -46,10 +47,34 @@ exports.createBook = async (req, res) => {
     const newBook = new Book({
       title,
       author,
+      year: year || undefined, // Include year if provided
       user: req.user.userId
     });
     
     const savedBook = await newBook.save();
+    
+    // Send email notification after successful book creation
+    try {
+      const emailResult = await emailNotificationMiddleware({
+        title: savedBook.title,
+        author: savedBook.author,
+        year: savedBook.year,
+        createdAt: savedBook.createdAt
+      });
+      
+      if (emailResult.success) {
+        console.log('✅ Email notification sent successfully');
+        if (emailResult.previewUrl) {
+          console.log('📧 Email preview:', emailResult.previewUrl);
+        }
+      } else {
+        console.log('⚠️ Email notification failed:', emailResult.error);
+      }
+    } catch (emailError) {
+      // Log email error but don't fail the book creation
+      console.error('❌ Email notification error:', emailError.message);
+    }
+    
     res.status(201).json(savedBook);
   } catch (error) {
     res.status(400).json({ message: error.message });
