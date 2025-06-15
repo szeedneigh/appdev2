@@ -1,0 +1,91 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Book Added Notification
+    style.
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f4f4f4;
+      }
+      .container {
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      }
+      .header {
+        text-align: center;
+        color: #2c3e50;
+        border-bottom: 3px solid #3498db;
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+      }
+      .book-details {
+        background-color: #ecf0f1;
+        padding: 20px;
+        border-radius: 5px;
+        margin: 20px 0;
+      }
+      .detail-item {
+        margin: 10px 0;
+        padding: 8px;
+        background-color: white;
+        border-left: 4px solid #3498db;
+        border-radius: 3px;
+      }
+      .detail-label {
+        font-weight: bold;
+        color: #2c3e50;
+      }
+      .confirmation {
+        background-color: #d5f4e6;
+        color: #27ae60;
+        padding: 15px;
+        border-radius: 5px;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 20px;
+      }
+      .footer {
+        text-align: center;
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: 1px solid #bdc3c7;
+        color: #7f8c8d;
+        font-size: 0.9em;
+      }
+  body
+    .container
+      .header
+        h1 📚 New Book Added to Your Library
+        p A new book has been successfully added to the system
+      
+      .book-details
+        h2 Book Details:
+        .detail-item
+          span.detail-label Title: 
+          span #{book.title}
+        .detail-item
+          span.detail-label Author: 
+          span #{book.author}
+        if book.yearPublished
+          .detail-item
+            span.detail-label Year Published: 
+            span #{book.yearPublished}
+        .detail-item
+          span.detail-label Added on: 
+          span #{book.createdAt ? new Date(book.createdAt).toLocaleDateString() : new Date().toLocaleDateString()}
+      
+      .confirmation
+        ✅ Confirmation: A new book has been added to the system successfully!
+      
+      .footer
+        p This is an automated notification from your Book Management System
+        p If you have any questions, please contact your system administrator 
